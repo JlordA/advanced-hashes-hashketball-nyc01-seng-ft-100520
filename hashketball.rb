@@ -233,8 +233,8 @@ def big_shoe_rebounds
           if inner_team_stat.class == Hash
              inner_team_stat.each do |stat_key, stat_value|
               shoe_array << inner_team_stat[:shoe]
-              if inner_team_stat[:shoe] == shoe_array.max
-                #binding.pry
+              #if inner_team_stat[:shoe] == shoe_array.max
+                binding.pry
               end
               #return inner_team_stat[:rebounds]
             end
