@@ -1,4 +1,5 @@
 # Write your code below game_hash
+require 'pry'
 def game_hash
   {
     home: {
@@ -127,3 +128,24 @@ def game_hash
 end
 
 # Write code here
+def num_points_scored(player_name)
+  game_hash.each do |location, team_data|
+    team_data.each do |team_stat, stat_data|
+     if stat_data.class == Array
+        stat_data.each do |inner_team_stat|
+          if inner_team_stat.class == Hash
+            inner_team_stat.detect do |stat_key, stat_value|
+              if inner_team_stat[:player_name] == player_name
+                 return inner_team_stat[:points]
+               #binding.pry
+              end
+            end
+          end
+       end
+      end
+    end
+  end
+end
+
+def shoe_size(player_name)
+end
