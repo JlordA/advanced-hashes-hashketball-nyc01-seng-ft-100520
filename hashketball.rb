@@ -214,7 +214,7 @@ def player_stats(player_name)
             inner_team_stat.detect do |stat_key, stat_value|
               if inner_team_stat[:player_name] == player_name
                  return inner_team_stat[:points]
-               #binding.pry
+               binding.pry
               end
             end
           end
