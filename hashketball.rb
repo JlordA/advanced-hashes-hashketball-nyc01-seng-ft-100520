@@ -173,3 +173,11 @@ def team_colors(team_name)
     end
   end
 end
+
+def team_names
+  team_array = []
+  game_hash.each do |locatino, team_data|
+    team_array << team_data[:team_name]
+  end
+  team_array
+end
