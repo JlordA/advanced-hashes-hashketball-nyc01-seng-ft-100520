@@ -191,6 +191,7 @@ def player_numbers(team_name)
         stat_data.each do |inner_team_stat|
           if inner_team_stat.class == Hash
             inner_team_stat.detect do |stat_key, stat_value|
+              numbers_array << inner_team_stat[:number]
               #if inner_team_stat[:player_name] == player_name
               #   return inner_team_stat[:points]
                binding.pry
