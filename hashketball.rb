@@ -235,7 +235,7 @@ def big_shoe_rebounds
               shoe_array << inner_team_stat[:shoe]
               #if inner_team_stat[:shoe] == shoe_array.max
                 binding.pry
-              end
+              #end
               #return inner_team_stat[:rebounds]
             end
           end
