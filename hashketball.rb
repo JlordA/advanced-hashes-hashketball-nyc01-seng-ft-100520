@@ -228,7 +228,7 @@ def big_shoe_rebounds
   shoe_array = []
   game_hash.each do |location, team_data|
     team_data.each do |team_stat, stat_data|
-      binding.pry
+      #binding.pry
      if stat_data.class == Array
         stat_data.each do |inner_team_stat|
           if inner_team_stat.class == Hash
