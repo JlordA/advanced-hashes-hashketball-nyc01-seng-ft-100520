@@ -225,11 +225,14 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  shoe_array = []
+  shoe = 0
+  rebounds = 0
   game_hash.each do |location, team_data|
     team_data[:players].each do |player|
       binding.pry
-      player[:shoe]
+      if player[:shoe] > shoe
+         shoe = player[:shoe]
+         rebounds = player[:rebounds]
      if stat_data.class == Array
         stat_data.each do |inner_team_stat|
           if inner_team_stat.class == Hash
