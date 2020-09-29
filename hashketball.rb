@@ -194,7 +194,7 @@ def player_numbers(team_name)
               numbers_array << inner_team_stat[:number]
               #if inner_team_stat[:player_name] == player_name
               #   return inner_team_stat[:points]
-               binding.pry
+               #binding.pry
               end
             end
           end
