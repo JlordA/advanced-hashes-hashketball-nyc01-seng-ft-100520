@@ -225,6 +225,7 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
+  shoe_array = []
   game_hash.each do |location, team_data|
     team_data.each do |team_stat, stat_data|
      if stat_data.class == Array
